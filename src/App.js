@@ -5,11 +5,13 @@ import Home from './pages/Home';
 import Rooms from './pages/Rooms';
 import SingleRoom from './pages/SingleRoom';
 import Error from './pages/Error';
-import {Route, Switch, Link} from 'react-router-dom'
+import {Route, Switch, Link} from 'react-router-dom';
+import Navbar from './components/Navbar'
 
 function App() {
 	return(
 	<>
+	<Navbar/>
 	<Switch>
 		/**we use switch so errorpage will show up only on its own */
 		<Route exact path="/" component={Home} />
